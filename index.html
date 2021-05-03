@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>My Profile</title>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+	
+	body{
+		background-image: url(bg.jpg);	
+	}
+	h2
+	{
+		color: white;
+	}
+</style>
+
+
+</head>
+<body>
+	
+		<h2> Do you want to know about me? Click My Picture.</h2>
+
+	<div class="action">
+	<div class="profile" onclick="menuToggle();">
+		<img src="img.jpg">
+
+	</div>
+	<div class="menu">
+		<h3>Angela Gesim<br><br><span>Welcome to my page</span></h3>
+		<ul>
+			<li><img src="biography.png"><a href="biography.html">About Me</a></li>
+			<li><img src="hobbies.png"><a href="hobbies.html">Hobbies</a></li>
+			<li><img src="pictures.png"><a href="pictures.html">Pictures</a></li>
+			<li><img src="videos.png"><a href="videos.html">Videos</a></li>
+
+		</ul>
+	</div>
+</div>
+<script>
+	function menuToggle(){
+		const toggleMenu = document.querySelector('.menu');
+		toggleMenu.classList.toggle('active')
+	}
+
+</script>
+
+
+</body>
+</html>
